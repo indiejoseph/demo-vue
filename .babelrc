@@ -1,0 +1,7 @@
+{
+  "presets": ["es2015", "angular2", "react"],
+  "plugins": [
+    "react-hot-loader/babel",
+    "transform-runtime"
+  ]
+}

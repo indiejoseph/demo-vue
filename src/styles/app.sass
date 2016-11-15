@@ -1,0 +1,72 @@
+@import "./skeleton.scss"
+
+body
+  font-size: 16px
+  padding: 1em
+
+.headline
+  color: white
+  text-align: center
+  font-weight: bold
+  margin-bottom: 1em
+
+#demo-container
+  max-width: 100%
+  width: 100%
+
+  .row
+    .columns
+      background-color: #444
+      padding: 1em
+      box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2)
+
+      &:hover
+        box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.3)
+
+#file-size
+  height: 320px
+
+#file-size, #render
+  text-align: center
+  padding-bottom: 2em
+  margin-bottom: 1em
+  border-bottom: 1px solid #666
+
+  h1, h2, h2, h3, h4, h5, h6
+    color: white
+    text-transform: uppercase
+
+#headline
+  text-align: center
+  padding: 1em
+  margin: -1em -1em 2em -1em
+  background-color: #888
+
+
+article
+  ul
+    li
+      list-style-type: none
+      font-size: 1.1em
+      color: white
+
+.dim
+  color: #bcbcbc
+
+.render-timer
+  color: $primary-color
+
+.render-item-container
+  margin: 1em 0 1em
+  text-align: left
+
+  .render-item
+    text-align: center
+    display: inline-block
+    width: 32px
+    height: 32px
+    font-size: 0.75em
+    background-color: $primary-color
+    color: white
+    margin: 0 1px 1px
+    line-height: 32px

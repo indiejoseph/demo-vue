@@ -1,0 +1,31 @@
+<div id="ng2-app">
+  <header id="headline">
+    <img src="./images/ng2.png" width="120" />
+  </header>
+  <article id="file-size">
+    <header>
+      <h5>File Size</h5>
+    </header>
+    <ul>
+      <file-item
+        *ngFor="let fileSize of fileSizes"
+        [name]="fileSize.name"
+        [size]="fileSize.size"
+      ></file-item>
+    </ul>
+  </article>
+  <article id="render">
+    <header>
+      <h5>Rendering</h5>
+    </header>
+    <button (click)="clickHandler()" class="button-primary">Test</button>
+    <div class="render-timer">TIMER: {{ timer }}s</div>
+    <div class="render-item-container">
+      <render-item
+        *ngFor="let index of renderItems"
+        [index]="index"
+        [onFinish]="renderFinishHandler.bind(this)"
+      ></render-item>
+    </div>
+  </article>
+</div>

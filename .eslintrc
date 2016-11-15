@@ -1,0 +1,42 @@
+---
+parser: babel-eslint
+
+parserOptions:
+  sourceType: module
+  ecmaFeatures:
+    modules: true
+    jsx: true
+
+plugins:
+  - babel
+  - angular
+  - react
+  - vue
+  - html
+
+globals:
+
+env:
+  browser: true
+  es6: true
+
+rules:
+  semi:
+    - "error"
+    - "always"
+  object-curly-spacing:
+    - "error"
+    - "always"
+  array-bracket-spacing:
+    - "error"
+    - "always"
+  space-before-function-paren:
+    - "error"
+    - "always"
+  no-unused-vars:
+    - "error"
+  space-before-blocks:
+    - "error"
+
+  # JSX
+  react/jsx-uses-vars: 1
